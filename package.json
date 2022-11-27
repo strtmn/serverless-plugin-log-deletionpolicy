@@ -1,26 +1,26 @@
 {
-  "name": "serverless-plugin-log-retention",
-  "version": "2.0.0",
-  "description": "Control the retention of your function's cloudwatch logs.",
-  "main": "add-log-retention.js",
+  "name": "serverless-plugin-log-deletionpolicy",
+  "version": "1.0.0",
+  "description": "Control the deletion policy of your function's cloudwatch logs.",
+  "main": "add-log-deletionpolicy.js",
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArtificerEntertainment/serverless-plugin-log-retention.git"
+    "url": "git+https://github.com/strtmn/serverless-plugin-log-deletionpolicy.git"
   },
   "bugs": {
-    "url": "https://github.com/ArtificerEntertainment/serverless-plugin-log-retention/issues"
+    "url": "https://github.com/strtmn/serverless-plugin-log-deletionpolicy/issues"
   },
-  "homepage": "https://github.com/ArtificerEntertainment/serverless-plugin-log-retention",
+  "homepage": "https://github.com/strtmn/serverless-plugin-log-deletionpolicy",
   "keywords": [
     "serverless",
     "plugin",
     "log",
-    "retention"
+    "deletion policy"
   ],
-  "author": "Artificer Entertainment",
+  "author": "Hannes Strautmann",
   "license": "MIT",
   "dependencies": {
     "nco": "1.0.1",

@@ -1,5 +1,5 @@
-# serverless-plugin-log-retention
-Control the retention of your serverless function's cloudwatch logs.
+# serverless-plugin-log-deletionpolicy
+Control the deletion policy of your serverless function's cloudwatch logs.
 
 ## Usage example
 `serverless.yml`
@@ -8,16 +8,16 @@ Control the retention of your serverless function's cloudwatch logs.
 service: sample
 
 plugins:
-  - serverless-plugin-log-retention
+  - serverless-plugin-log-deletionpolicy
 
 provider:
   name: aws
 
 custom:
-  logRetentionInDays: 30 # used to set a global value for all functions
+  logDeletionPolicy: Retain # used to set a global value for all functions
 
 functions:
   function1:
   function2:
-    logRetentionInDays: 10 # set the retention for specific log group
+    logDeletionPolicy: Retain # set the deletion policy for specific log group
 ```
